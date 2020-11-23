@@ -33,7 +33,10 @@ if ((playersAnswer === "r" && computerAnswer === "s") || (playersAnswer === "s" 
     wins ++;
 }
 
-
+// criteria for tie
+else if ((playersAnswer === "r" && computerAnswer === "r") || (playersAnswer === "s" && computerAnswer === "s") || (playersAnswer === "p" && computerAnswer === "p")) {
+    ties ++;
+}
 
     </script>
 </body>
