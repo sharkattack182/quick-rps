@@ -16,6 +16,13 @@ var wins = 0;
 var losses = 0;
 var ties = 0;
 
+
+for (var i = 0; i < 5; i++) {
+    
+    
+
+
+
 // generating computers guess
 var computerAnswer = choices[Math.floor(choices.length * Math.random())];
 
@@ -45,8 +52,9 @@ else {
     console.log("You lost")
     losses ++
 }
+}
 
-alert("")
+alert("You have " + wins + " wins " + losses + " losses and " + ties + " ties. Good game!");
 
     </script>
 </body>
