@@ -19,6 +19,16 @@ var ties = 0;
 // generating computers guess
 var computerAnswer = choices[Math.floor(choices.length * Math.random())];
 
+// generating the players answer 
+var playersAnswer = prompt("Do you choose r, p, or s?");
+
+//determines if the users choice was valid
+if (playersAnswer === "r" || playersAnswer === "p" || playersAnswer === "s") {
+    alert("The computer chose " + computerAnswer + "!");
+} else (alert("Please choose a valid answer."))
+
+
+
 
     </script>
 </body>
