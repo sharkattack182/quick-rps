@@ -13,7 +13,7 @@ var choices = ["r", "p", "s"];
 
 // score count
 var wins = 0;
-var loses = 0;
+var losses = 0;
 var ties = 0;
 
 // generating computers guess
@@ -30,13 +30,23 @@ if (playersAnswer === "r" || playersAnswer === "p" || playersAnswer === "s") {
 
 // set the players winning criteria 
 if ((playersAnswer === "r" && computerAnswer === "s") || (playersAnswer === "s" && computerAnswer === "p") || (playersAnswer === "p" && computerAnswer === "r")) {
+    console.log("You won")
     wins ++;
 }
 
 // criteria for tie
 else if ((playersAnswer === "r" && computerAnswer === "r") || (playersAnswer === "s" && computerAnswer === "s") || (playersAnswer === "p" && computerAnswer === "p")) {
+    console.log("its a tie")
     ties ++;
 }
+
+// loss criteria 
+else {
+    console.log("You lost")
+    losses ++
+}
+
+alert("")
 
     </script>
 </body>
