@@ -28,6 +28,11 @@ if (playersAnswer === "r" || playersAnswer === "p" || playersAnswer === "s") {
 } else (alert("Please choose a valid answer."))
 
 
+// set the players winning criteria 
+if ((playersAnswer === "r" && computerAnswer === "s") || (playersAnswer === "s" && computerAnswer === "p") || (playersAnswer === "p" && computerAnswer === "r")) {
+    wins ++;
+}
+
 
 
     </script>
